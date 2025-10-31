@@ -413,7 +413,7 @@ footer {
   }
 }
 
-/* 📱 Mobile screens (below 600px) */
+
 @media (max-width: 600px) {
   body {
     font-size: 14px;
