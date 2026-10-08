@@ -57,8 +57,13 @@ function Projects() {
 
         <div className="reveal-stagger grid items-stretch gap-5 md:grid-cols-2 lg:gap-6">
           {overviewProjects.map((project, index) => {
-            const card = (
+            const projectRoute = project.route
+            if (!projectRoute) return null
+
+            return (
               <article
+                key={project.slug}
+                data-reveal
                 className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-700/70 bg-white shadow-md shadow-black/10 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/35 hover:shadow-xl hover:shadow-cyan-950/15 motion-reduce:transition-none"
               >
                 <div
@@ -107,45 +112,28 @@ function Projects() {
                     )}
                   </ul>
 
-                  <div className="mt-auto flex items-center justify-between gap-4 border-t border-slate-800 pt-5">
-                    <span
-                      className={`inline-flex min-h-10 items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold ${
-                        project.route
-                          ? "bg-cyan-300 !text-black transition-colors group-hover:bg-cyan-200"
-                          : "border border-slate-700 text-slate-500"
-                      }`}
+                  <div className="mt-auto flex flex-wrap items-center gap-3 border-t border-slate-800 pt-5">
+                    <a
+                      href={projectRoute}
+                      onClick={(event) => {
+                        event.preventDefault()
+                        navigateTo(projectRoute)
+                      }}
+                      className="inline-flex min-h-10 items-center justify-center rounded-xl bg-cyan-300 px-4 py-2 text-sm font-semibold !text-black transition-colors hover:bg-cyan-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
                     >
-                      {project.route ? "View Project" : "Overview unavailable"}
-                      {project.route && (
-                        <span aria-hidden="true" className="ml-2">
-                          ↗
-                        </span>
-                      )}
-                    </span>
-                    <span className="text-xs text-slate-500">
-                      {project.route ? "Case study" : "Project details"}
-                    </span>
+                      View Project
+                    </a>
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-10 items-center justify-center rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-cyan-300/40 hover:text-cyan-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                    >
+                      Live Website <span aria-hidden="true" className="ml-1">↗</span>
+                    </a>
                   </div>
                 </div>
               </article>
-            )
-
-            const projectRoute = project.route
-            if (!projectRoute) return null
-            return (
-              <a
-                key={project.slug}
-                href={projectRoute}
-                data-reveal
-                onClick={(event) => {
-                  event.preventDefault()
-                  navigateTo(projectRoute)
-                }}
-                className="block h-full rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
-                aria-label={`View ${project.title} project overview`}
-              >
-                {card}
-              </a>
             )
           })}
         </div>

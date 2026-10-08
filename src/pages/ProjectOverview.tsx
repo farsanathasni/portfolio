@@ -47,7 +47,7 @@ function ProjectOverview({ project, sectionId }: ProjectOverviewProps) {
           </p>
           <h1
             id={`${sectionId}-heading`}
-            className="text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl"
+            className="text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl lg:text-5xl"
           >
             <LetterReveal
               label={project.title}
@@ -59,6 +59,16 @@ function ProjectOverview({ project, sectionId }: ProjectOverviewProps) {
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
             {project.description}
           </p>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex min-h-11 items-center justify-center rounded-xl bg-cyan-300 px-5 py-2.5 text-sm font-semibold !text-black transition duration-200 hover:-translate-y-0.5 hover:bg-cyan-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300 motion-reduce:transition-none"
+            >
+              Live Website <span aria-hidden="true" className="ml-1.5">↗</span>
+            </a>
+          )}
         </div>
 
         <div data-reveal="scale" className="mb-10">

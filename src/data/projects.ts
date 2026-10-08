@@ -2,6 +2,7 @@ export type PortfolioProject = {
   slug: string
   title: string
   route?: string
+  liveUrl: string
   description: string
   technologies: string[]
   highlights: string[]
@@ -14,6 +15,7 @@ export const projects: PortfolioProject[] = [
     slug: "petlora",
     title: "petLora",
     route: "/projects/petlora",
+    liveUrl: "https://petlora.vercel.app/",
     description:
       "A full-stack pet service platform connecting pet owners with veterinarians, groomers, and boarding providers. Supports pet profiles, service discovery, bookings, provider communication, payments, and administration.",
     technologies: [
@@ -45,6 +47,7 @@ export const projects: PortfolioProject[] = [
     slug: "liyana-metals",
     title: "Liyana Metals / Home Needs",
     route: "/projects/liyana-metals",
+    liveUrl: "https://liyana-metals-iota.vercel.app/",
     description:
       "A full-stack e-commerce application for browsing products, managing users and orders, and handling online payments through a dedicated admin system.",
     technologies: [

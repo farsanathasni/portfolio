@@ -8,6 +8,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+ 
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
   background: #070b14;
 }

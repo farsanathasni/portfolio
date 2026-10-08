@@ -68,7 +68,7 @@ function Skills() {
       ref={ref}
       id="skills"
       aria-labelledby="skills-heading"
-className={`scroll-reveal relative overflow-hidden bg-slate-50 px-6 pt-[30px] pb-20 sm:px-8 sm:pt-[30px] sm:pb-24 lg:pt-[70px] lg:pb-28 ${isRevealed ? "is-revealed" : ""} ${isContentRevealed ? "is-content-revealed" : ""}`}    >
+className={`scroll-reveal relative overflow-hidden bg-slate-50 px-6 pt-[30px] pb-20 sm:px-8 sm:pt-[30px] sm:pb-24 lg:pt-[7git push -u origin main0px] lg:pb-28 ${isRevealed ? "is-revealed" : ""} ${isContentRevealed ? "is-content-revealed" : ""}`}    >
       <div className="mx-auto max-w-6xl">
         <div data-heading-reveal className="max-w-2xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
