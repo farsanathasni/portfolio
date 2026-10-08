@@ -66,7 +66,7 @@ className={`scroll-reveal relative overflow-hidden bg-slate-50 px-6 pt-[30px] pb
               </p>
               <h2
                 id="contact-heading"
-                className="max-w-xl text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl"
+                className="max-w-xl text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-4xl"
               >
                 <LetterReveal
                   label="Let's Build Something Together"
