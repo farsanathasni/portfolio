@@ -39,7 +39,7 @@ function Hero({ hasEntered }: HeroProps) {
           <h1 className="text-5xl font-bold leading-[1.08] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
             <span className={reveal("hero-reveal-greeting")}>Hi, I’m </span>
             <span className={`${reveal("hero-reveal-name")} hero-name text-blue-700`}>
-              Farsana.
+              Farsana Thasni.
             </span>
           </h1>
 
@@ -103,7 +103,7 @@ function Hero({ hasEntered }: HeroProps) {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-slate-700/80 bg-slate-900 shadow-2xl shadow-cyan-950/30 transition duration-500 hover:-translate-y-1 hover:border-cyan-300/40 hover:shadow-cyan-900/30 motion-reduce:transition-none">
             <img
               src={profileImage}
-              alt="Farsana, MERN Stack Developer"
+              alt="Farsana Thasni, MERN Stack Developer"
               className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.055] motion-reduce:transition-none"
               fetchPriority="high"
             />

@@ -76,7 +76,7 @@ function Navbar() {
           }}
           className="group shrink-0 text-xl font-bold tracking-tight text-white focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
         >
-          Farsana<span className="text-cyan-300 transition-colors group-hover:text-emerald-300">.</span>
+          Farsana Thasni<span className="text-cyan-300 transition-colors group-hover:text-emerald-300">.</span>
         </a>
 
         <div className="hidden items-center gap-0.5 lg:flex">

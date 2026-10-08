@@ -69,7 +69,7 @@ className={`scroll-reveal relative overflow-hidden bg-slate-50 px-6 pt-[30px] pb
           <div>
             <div data-reveal className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg shadow-slate-900/5 sm:p-8">
               <p className="text-lg leading-8 text-slate-600">
-                I’m <span className="font-semibold text-slate-900">Farsana</span>,
+                I’m <span className="font-semibold text-slate-900">Farsana Thasni</span>,
                 a MERN Stack Developer currently working as a{" "}
                 <span className="font-semibold text-slate-900">
                   MERN Stack Developer Intern at Bridgeon

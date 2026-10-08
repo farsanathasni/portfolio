@@ -46,7 +46,7 @@ function Footer() {
               }}
               className="inline-flex items-center text-xl font-bold tracking-tight text-white transition-colors hover:text-blue-300 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
             >
-              Farsana<span className="text-blue-400">.</span>
+              Farsana Thasni<span className="text-blue-400">.</span>
             </a>
             <p className="mt-2 text-sm font-medium text-slate-400">
               MERN Stack Developer
@@ -104,7 +104,7 @@ function Footer() {
         </div>
 
         <div data-reveal className="mt-10 border-t border-slate-800 pt-5 text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Farsana. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Farsana Thasni. All rights reserved.</p>
         </div>
       </div>
     </footer>

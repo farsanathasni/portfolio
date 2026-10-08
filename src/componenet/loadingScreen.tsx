@@ -40,7 +40,7 @@ function LoadingScreen({ onComplete }: LoadingScreenProps) {
     >
       <div className="w-[min(19rem,75vw)] text-center">
         <p className="loading-wordmark text-4xl font-bold tracking-tight text-white sm:text-5xl">
-          Farsana<span className="text-cyan-300">.</span>
+          Farsana Thasni<span className="text-cyan-300">.</span>
         </p>
         <div
           aria-hidden="true"
